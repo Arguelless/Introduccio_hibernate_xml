@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.arguelles.Ciutat" table="Ciutat">
+        <meta attribute="class-description">Ciutat detail</meta>
+        <id name="ciutatId" type="long">
+            <column name="ciutat_id" />
+            <generator class="native" />
+        </id>
+        <property name="nom" type="string">
+            <column name="nom_ciutat" />
+        </property>
+        <property name="pais" type="string">
+            <column name="pais_ciutat" />
+        </property>
+        <property name="codiPostal" type="int">
+            <column name="codi_postal_ciutat" />
+        </property>
+    </class>
+</hibernate-mapping>
